@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Andersen-react-3lesson/static/css/main.a682f1af.css",
+    "main.js": "/Andersen-react-3lesson/static/js/main.c04fd278.js",
+    "index.html": "/Andersen-react-3lesson/index.html",
+    "main.a682f1af.css.map": "/Andersen-react-3lesson/static/css/main.a682f1af.css.map",
+    "main.c04fd278.js.map": "/Andersen-react-3lesson/static/js/main.c04fd278.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a682f1af.css",
+    "static/js/main.c04fd278.js"
+  ]
+}
