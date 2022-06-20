@@ -117,17 +117,27 @@ export const Form = ({ tableTrue }) => {
     }
 
     const clearFunction = () => {
-        setErrorValue('');
+        setErrorValue({
+            Name: '',
+            LastName: '',
+            Birthday: '',
+            PhoneNumber: '',
+            WebPage: '',
+            ElevatorPitch: '',
+            HardSkills: '',
+            YourLastProject: '',
+            EmptyValue: ''
+        });
 
         setState({
-            Name: null,
-            LastName: null,
-            Birthday: null,
-            PhoneNumber: null,
-            WebPage: null,
-            ElevatorPitch: null,
-            HardSkills: null,
-            YourLastProject: null
+            Name: '',
+            LastName: '',
+            Birthday: '',
+            PhoneNumber: '',
+            WebPage: '',
+            ElevatorPitch: '',
+            HardSkills: '',
+            YourLastProject: ''
         });
 
         setTextareaCounter({
@@ -164,22 +174,26 @@ export const Form = ({ tableTrue }) => {
                 type={'text'}
                 errorValue={errorValue.LastName}
                 change={onChange}
+                stateInputValue={state.LastName}
             />
             <Input name={'Birthday'}
                 type={'date'}
                 errorValue={errorValue.Birthday}
                 change={onChange}
+                stateInputValue={state.Birthday}
             />
             <Input name={'PhoneNumber'}
                 type={'tel'}
                 errorValue={errorValue.PhoneNumber}
                 change={onChange}
                 maxSymbolLength={telLength}
+                stateInputValue={state.PhoneNumber}
             />
             <Input name={'WebPage'}
                 type={'url'}
                 errorValue={errorValue.WebPage}
                 change={onChange}
+                stateInputValue={state.WebPage}
             />
             <Textarea name={'ElevatorPitch'}
                 type={'textarea'}
@@ -188,6 +202,7 @@ export const Form = ({ tableTrue }) => {
                 errorValue={errorValue.ElevatorPitch}
                 counter={counter.ElevatorPitch}
                 change={onChange}
+                stateInputValue={state.ElevatorPitch}
             />
             <Textarea name={'HardSkills'}
                 type={'textarea'}
@@ -196,6 +211,7 @@ export const Form = ({ tableTrue }) => {
                 errorValue={errorValue.HardSkills}
                 counter={counter.HardSkills}
                 change={onChange}
+                stateInputValue={state.HardSkills}
             />
             <Textarea name={'YourLastProject'}
                 type={'textarea'}
@@ -204,6 +220,7 @@ export const Form = ({ tableTrue }) => {
                 errorValue={errorValue.YourLastProject}
                 counter={counter.YourLastProject}
                 change={onChange}
+                stateInputValue={state.YourLastProject}
             />
             <div className={FormStyles.button_wrapper}>
                 <button onClick={clearFunction} className={FormStyles.btn} style={{ backgroundColor: 'red' }} type="reset" >Clear</button>
