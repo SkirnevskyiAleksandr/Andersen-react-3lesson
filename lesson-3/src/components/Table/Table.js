@@ -10,7 +10,7 @@ export const Table = ({ inputValue }) => {
                 <li><span>phone-number: </span> {inputValue.PhoneNumber}</li>
                 <li><span>web-page: </span> {inputValue.WebPage}</li>
                 <li><span>elevator-pitch: </span> <p>{inputValue.ElevatorPitch}</p> </li>
-                <li><span>hurd-skills: </span><p>{inputValue.HurdSkills}</p> </li>
+                <li><span>hurd-skills: </span><p>{inputValue.HardSkills}</p> </li>
                 <li><span>Your last project: </span> <p>{inputValue.YourLastProject}</p></li>
             </ul>
         </div>
