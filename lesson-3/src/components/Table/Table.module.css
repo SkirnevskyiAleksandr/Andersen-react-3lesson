@@ -5,15 +5,16 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow:auto;
 }
 
 li {
-    margin-bottom: 15%;
+    margin-bottom: 10px;
     color: brown;
 }
 
@@ -22,6 +23,8 @@ span {
 }
 
 p{
-    max-width: 300px;
+    max-width: 700px;
+    max-height: 300px;
     word-wrap: break-word;
+    overflow: auto;
 }

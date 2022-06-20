@@ -36,6 +36,9 @@ h2 {
     background: #2884f6;
     color: #fff;
 }
+.customColor{
+    background-color: red;
+}
 
 .btn:hover {
     color: #363f54;

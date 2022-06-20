@@ -223,7 +223,7 @@ export const Form = ({ tableTrue }) => {
                 stateInputValue={state.YourLastProject}
             />
             <div className={FormStyles.button_wrapper}>
-                <button onClick={clearFunction} className={FormStyles.btn} style={{ backgroundColor: 'red' }} type="reset" >Clear</button>
+                <button onClick={clearFunction} className={`${FormStyles.btn} ${FormStyles.customColor}`} type="reset" >Clear</button>
                 <button onClick={isEmptyInput} className={FormStyles.btn} type="submit">Save</button>
             </div>
             <div className={FormStyles.emptyValue}>{errorValue.EmptyValue}</div>
